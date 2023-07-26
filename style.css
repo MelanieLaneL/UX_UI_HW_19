@@ -92,6 +92,7 @@ body { margin: 0;
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 .herobanner {
   margin-left: 100px;
   font-family: 'Big Shoulders Display', cursive;
@@ -242,6 +243,10 @@ body { margin: 0;
   text-align: left;
 }
 
+
+
+
+
 .header-1 {
   font-family: 'Big Shoulders Display', cursive;
         font-family: 'Lato', sans-serif;
@@ -254,12 +259,13 @@ body { margin: 0;
 .header-2 {
   font-family: 'Shippori Mincho B1', serif;
   font-size: 18px;
+  padding-left: 25px;
   margin-bottom: 80px;
 }
 
 .case-study-button {
   font-family: 'Big Shoulders Display', 'Lato', 'Open Sans', sans-serif;
-    text-align: left;
+    text-align: center;
     font-size: 50px;
     line-height: 1.2;
     background-color: #DCFEEA;
@@ -269,11 +275,12 @@ body { margin: 0;
     cursor: pointer;
     font-size: 16px;
     border-radius: 4px;
+    margin-left: 20px;
 }
 
-.case-study-button:hover {
-  background-color: #EBE5DF
-}
+
+
+
 
 .black-line {
   height: 2px;
@@ -332,9 +339,6 @@ body { margin: 0;
     border-radius: 4px;
 }
 
-.case-study-button:hover {
-  background-color: #EBE5DF
-}
 
 
 

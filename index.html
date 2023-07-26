@@ -6,6 +6,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".nav-item a[href='#']").on("click", function(event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: $("#footer").offset().top }, 800);
+        });
+      });
+
+      $(document).ready(function() {
+  $(".case-study-button").hover(
+    function() {
+      $(this).css({
+        height: "93px",
+        width: "279px",
+        fontSize: "40px"
+      });
+    },
+    function() {
+      $(this).css({
+        height: "",
+        width: "",
+        fontSize: ""
+      });
+    }
+  );
+});
+    </script>
+    
+
 </head>
 <header></header>
 <body>
@@ -15,9 +46,9 @@
                 
                     <img id="logo" src="images/image 2.png" alt="logo" width="40px" height="40px">
                 
-                <div class="nav-item"> <a href="#">Projects</a></div>
-                <div class="nav-item"> <a href="#">About</a></div>
-                <div class="nav-item"> <a href="#">Resume</a></div>
+                <div class="nav-item"> <a href="1">Projects</a></div>
+                <div class="nav-item"> <a href="2">About</a></div>
+                <div class="nav-item"> <a href="3">Resume</a></div>
                 <div class="nav-item"> <a href="#">Contact</a></div>
                 <div class="nav-item">
                     <img id="linkedinicon" src="images/linkedin.png" alt="linkedin" width="40" height="40">
@@ -131,7 +162,8 @@
   </div>
 </section>
 
-    <footer>
+
+      <footer id="footer">
         <div class="footer-container">
           <div class="footer-content">
             <div class="footer1">Let's create some UX magic!
@@ -164,8 +196,8 @@
           </div>
         </div>
       </footer>
+     
 
-    
-    
+         
 </body>
 </html>
