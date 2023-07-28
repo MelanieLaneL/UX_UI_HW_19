@@ -34,6 +34,17 @@
     }
   );
 });
+
+$(document).ready(function() {
+  
+  $("a[href^='#']").on("click", function(event) {
+    event.preventDefault();
+    const target = $(this.getAttribute("href"));
+    if (target.length) {
+      $("html, body").animate({ scrollTop: target.offset().top }, 800);
+    }
+  });
+});
     </script>
     
 
@@ -57,21 +68,28 @@
             
         </div>
 
-    <section class="herolmg">
+    <section class="herolmg" id="hero-section">
         <div>
         <img id="Me" src="images/Mask group.png" alt="Hero Image" width="400px">
     </div>
-    
+
     <div class="herobanner">
       <div id="header1">What's Up?</div>
       <div id="header2">I'm Melanie</div>
       <div id="header3">UX Designer | Researcher | Writer</div>
     </div>
+    <div class="hero-text-container">
+      <h1 class="hero-text">
+        Solving problems with empathy, research, and creative insight
+      </h1>
+    </div>
+  </div>
       <div class="text">
         <div class="cta-container">
           <div id="cta">Want to see what I do?</div>
-          <div class="arrow-container">
+          <div class="arrow-container"><a href="#skills-section" class="arrow-container">
             <img id="arrow" src="images/scrollanimation.png" alt="Scroll Image" width="45px" height="45px">
+          </a>
           </div>
         </div>
       </div>
@@ -79,7 +97,7 @@
 </section>
 
 
-<section class="skills-section">
+<section class="skills-section" id="skills-section">
   <div class="skills-box">
     <h1 class="header-1">My Skills</h1>
     <div class="header-line"></div>
@@ -121,8 +139,10 @@
           <li>Procreate</li>
         </ul>
       </div>
-      <div class="skills-column">
-        <h2>Soft Skills</h2>
+
+      
+      <div class="skills-column-softskills">
+        <h3>Soft Skills</h3>
         <ul>
           <li>Communication: Clear expression and active listening.</li>
           <li>Critical Thinking: Evaluating information to make informed decisions.</li>
@@ -190,7 +210,7 @@
               <div class="form-field">
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="15" required></textarea>
-              </div>
+              </div><br>
               <a class="submit" href="#">Submit</a>
             </form>
           </div>

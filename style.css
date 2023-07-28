@@ -3,6 +3,7 @@ body { margin: 0;
     background-color: #EBE5DF;
 }
 
+
 .navigation-bar {
   width: 100%;
   height: 80px;
@@ -11,7 +12,7 @@ body { margin: 0;
   display: inline-block;
   vertical-align: center;
   background-color: #DCFEEA;
-  position: relative; /* Add position relative to create space for the lines */
+  position: relative; 
 }
 
 .navigation-bar::before,
@@ -91,6 +92,17 @@ body { margin: 0;
     margin-right: 100px;
     margin-top: 25px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+#Me:hover {
+  animation: spin-horizontal 2s linear infinite; 
+}
+
+@keyframes spin-horizontal {
+  0% { transform: rotateY(0); } 
+  100% { transform: rotateY(360deg); } 
 }
 
 .herobanner {
@@ -130,16 +142,32 @@ body { margin: 0;
     animation-delay: 3.5s;
   }
   
- 
-
+  .hero-text-container {
+    margin-top: 60px; 
+    margin-left: 250px; 
+    right: 50px; 
+    width: calc(100% - 350px); 
+    padding: 10px; 
+    background-color: black; 
+  }
+  .hero-text {
+    margin-top: 60px; 
+    margin-left: 250px; 
+    right: 50px; 
+    text-align: left;
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 16x;
+    color: #F3F2F2; 
+    
+  }
 
 .text {
   text-align: center;
   font-size: 16px;
   font-family: 'Shippori Mincho B1', serif;
-  margin-top: 275px;
-  opacity: 0; /* Initial opacity set to 0 */
-  animation: fadeIn 1s forwards; /* Apply fading-in animation */
+  margin-top: 90px;
+  opacity: 0; 
+  animation: fadeIn 1s forwards; 
   animation-delay: 1.5s; 
 }
 
@@ -211,6 +239,7 @@ body { margin: 0;
   font-size: 32px;
 }
 
+
 .skills-column ul {
   font-family: 'Shippori Mincho B1', serif;
   font-size: 17px;
@@ -219,6 +248,24 @@ body { margin: 0;
   padding-left: 20px;
 }
 
+
+.skills-column-softskills h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 32px;
+}
+
+.skills-column-softskills ul {
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 17px;
+  margin-top: 17px;
+  list-style-type: disc;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 17px;
+  margin-top: 17px;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-right:250px;
+}
 
 
 .portfolio-section {
@@ -264,19 +311,23 @@ body { margin: 0;
 }
 
 .case-study-button {
-  font-family: 'Big Shoulders Display', 'Lato', 'Open Sans', sans-serif;
-    text-align: center;
-    font-size: 50px;
-    line-height: 1.2;
-    background-color: #DCFEEA;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-    margin-left: 20px;
+  font-family: 'Shippori Mincho B1', serif;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+  background-color: #DCFEEA;
+  color: black;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 16px; 
+  border-radius: 4px;
+  margin-left: 20px;
+  text-decoration: none; 
+  box-shadow: 0 0 0 3px black;
+
 }
+
+
 
 
 
@@ -326,19 +377,20 @@ body { margin: 0;
 }
 
 .case-study-button {
-  font-family: 'Big Shoulders Display', 'Lato', 'Open Sans', sans-serif;
-    text-align: left;
-    font-size: 50px;
-    line-height: 1.2;
-    background-color: #DCFEEA;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
+  font-family: 'Shippori Mincho B1', serif;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+  background-color: #DCFEEA;
+  color: black; 
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 16px; 
+  border-radius: 4px;
+  margin-left: 20px;
+  text-decoration: none; 
+  box-shadow: 0 0 0 3px black;
 }
-
 
 
 
@@ -432,7 +484,7 @@ footer {
   
 
   .submit {
-    font-family: 'Big Shoulders Display', 'Lato', 'Open Sans', sans-serif;
+    font-family: 'Shippori Mincho B1', serif;
       text-align: left;
       font-size: 50px;
       line-height: 1.2;
