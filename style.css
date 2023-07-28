@@ -92,12 +92,16 @@ body { margin: 0;
     margin-right: 100px;
     margin-top: 25px;
     margin-bottom: 20px;
+    border: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 0 5px black;
     transition: transform 0.3s ease;
+ 
 }
 
 
 #Me:hover {
-  animation: spin-horizontal 2s linear infinite; 
+  animation: spin-horizontal 3s linear infinite; 
 }
 
 @keyframes spin-horizontal {
@@ -150,6 +154,7 @@ body { margin: 0;
     padding: 10px; 
     background-color: black; 
     border-radius: 10px;
+   
   }
   .hero-text {
     margin-top: 60px; 
@@ -158,9 +163,10 @@ body { margin: 0;
     text-align: left;
     font-family: 'Shippori Mincho B1', serif;
     font-size: 16x;
-    color: #F3F2F2; 
-    
+    color: #F3F2F2;    
   }
+ 
+  
 
 .text {
   text-align: center;
